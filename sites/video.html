@@ -52,22 +52,6 @@ h1 span {font-size:20px;}
   height: 50vh;
 }
 
-@media (min-aspect-ratio: 16/9) {
-  .video-background iframe {
-    /* width = 100 / (9 / 16) = 177.777777 */
-    width: 65vw;
-    height: 35vw;
-  }
-}
-
-@media (max-aspect-ratio: 16/9) {
-  .video-background iframe {
-    /* width = 100 / (9 / 16) = 177.777777 */
-    width: 65vw;
-    height: 35vw;
-  }
-}
-
     </style>
 
     <link rel="icon" type="image/x-icon" href="images/cat_favicon.png">
@@ -90,7 +74,7 @@ h1 span {font-size:20px;}
     <div style="width: 80vw; margin-left: auto; margin-right: auto;">
         <p>This is where the video will go.</p>
         <div class="video-background">
-            <iframe src="https://www.youtube.com/embed/tTNWDQLKDjk" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+            <iframe style="width:65vw; height:35vw; margin-left: 6.5vw;" src="https://www.youtube.com/embed/tTNWDQLKDjk" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
         </div>
     </div>
 </body>
